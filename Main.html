@@ -2,46 +2,60 @@
 <html>
 
     <head>
-        
         <title>EB - Hub</title>
         <link href = "css/openingPage.css" type = "text/css" rel = "stylesheet" /> 
-
+        <link href="css/secondPage.css" type="text/css" rel="stylesheet"/>
     </head>
 
     <body>
-        
-        <div id = "titleBlock"> <!-- Holds the Title and underline/score -->
+        <div id="container">
 
-            <h1 class="element">Elliot Brookes</h1>
-            <hr class = "element">
-            
+            <div id = "pageOne" class="pageOne">
+                <div id = "titleBlock"> <!-- Holds the Title and underline/score -->
+
+                    <h1 class="element">Elliot J Brookes</h1>
+                    <hr class = "element">
+                    
+                </div>
+                <a href="https://github.com/Gaems" id="github"> <!-- GitHub link -->
+                    <img src="pics/socialLogos/GitHub-Mark-120px-plus.png" class=" socialLogo link element middleRow" id="gitHub">
+                </a>
+                <a href="#"> <!-- -->
+                    <img src = "pics/socialLogos/mailIcon.png" class="socialLogo link element middleRow" id="email" >
+                </a>
+                <a href = "https://www.instagram.com/_elliotbrookes/"> <!-- Link for instagram, contains icon img-->
+                    <img src = "pics/socialLogos/pngfind.com-instagram-png-transparent-background-6932626.png" class = "socialLogo link element bottomRow" id = "instagram">
+                </a>
+                <a href = "https://www.linkedin.com/in/elliot-brookes-007550207/" > <!-- link element to linkedIn profile, containes icon img-->
+                    <img src = "pics/socialLogos/LI-In-Bug.png" class = "socialLogo link element bottomRow" id = "linkedIn">
+                </a>
+                <img src = "pics/profileMain.jpg" id = "profilePic" class = "element"> <!-- -->
+                <a href="#" id = "aboutMeBtn" class = "link element">About Me</a> <!-- Link to about me section -->
+                <a href="#" id="projects" class="link element">Projects</a>
+
+            </div>
+            <div class = "pageTwo">
+            </div>
+            <div class="pageThree">
+                <div id="titleBlock">
+                    <h1 class = "element link"></h1>
+                </div>
+                <p class="element" id="personalStatement">
+                    Example text
+                </p>
+            </div>
+            <div class="pageFour">
+                
+            </div>
+
+            <!-- Holds all links to scripting used in page-->
+            <script src = "JS/pageTransition.js"></script>
+            <script src = "anime/anime-master/lib/anime.min.js"></script>
+            <script src="JS/openingPage.js"></script>
+            <script src="JS/scrolling.js"></script>
         </div>
-        
 
-        <a href="https://github.com/Gaems" id="github"> <!-- GitHub link -->
-            <img src="pics/socialLogos/GitHub-Mark-120px-plus.png" class=" socialLogo link element middleRow" id="gitHub">
-        </a>
 
-        <a href="#"> <!-- -->
-            <img src = "pics/socialLogos/mailIcon.png" class="socialLogo link element middleRow" id="email" >
-        </a>
-
-        <a href = "https://www.instagram.com/_elliotbrookes/"> <!-- Link for instagram, contains icon img-->
-            <img src = "pics/socialLogos/pngfind.com-instagram-png-transparent-background-6932626.png" class = "socialLogo link element bottomRow" id = "instagram">
-        </a>
-
-        <a href = "https://www.linkedin.com/in/elliot-brookes-007550207/" > <!-- link element to linkedIn profile, containes icon img-->
-            <img src = "pics/socialLogos/LI-In-Bug.png" class = "socialLogo link element bottomRow" id = "linkedIn">
-        </a>
-
-        <img src = "pics/profileMain.jpg" id = "profilePic" class = "element"> <!-- -->
-
-        <a href="#" id = "aboutMe" class = "link element">About Me</a> <!-- Link to about me section -->
-        <a href="#" id="projects" class="link element">Projects</a>
-
-        <!-- Holds all links to scripting used in page-->
-        <script src = "anime/anime-master/lib/anime.min.js"></script>
-        <script src="JS/openingPage.js"></script>
     </body>
 
 </html>

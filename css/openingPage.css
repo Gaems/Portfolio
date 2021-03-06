@@ -1,24 +1,50 @@
 
 body, html {
-    background-color: beige;
     height: 100%;
-    
-
+    width: 100%;
     margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-.element {
+html::-webkit-scrollbar{
+    display: none;
+}
+
+
+#container {
+    height:100%;
+    width: 100%;
+    position: relative;
+    margin: inehrit;
+    z-index: 0;
+}
+
+
+#pageOne {
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    margin: 0;
+    position: fixed;
+    z-index: 10; /* SHOULD BE 3 UNLESS TESTING*/
+}
+
+
+
+.pageOne .element {
     opacity: 0;
 }
 
-#titleBlock{
-    position: absolute;
+.pageOne #titleBlock{
+    position: relative;
     left: 30%;
     top: 10%;
     width: 40%;
 }
 
-#titleBlock h1 {
+.pageOne #titleBlock h1 {
     font-size: 3vw;
     font-family: 'Courier New', Courier;
     text-align: center; 
@@ -30,6 +56,7 @@ hr {
 
 #profilePic {
     max-width: 15%;
+    min-width: 10%;
     border-radius: 50%;
     left: 42%;
     top: 30%;
@@ -45,13 +72,13 @@ hr {
 #instagram {
     top: 60%;
     left: 25%;
-    position:absolute;
+    position: absolute;
 }
 
 #linkedIn {
     top: 60%;
     left: 70%;
-    position:absolute;
+    position: absolute;
 }
 
 #github {
@@ -67,7 +94,7 @@ hr {
 
 }
 
-#aboutMe {
+#aboutMeBtn {
     color: black;
     font-family:'Courier New', Courier;
     left: 40%;
@@ -75,11 +102,10 @@ hr {
     font-size: 1.4vw;
     font-weight: bold;
     text-decoration: none;
-    position:absolute;
+    position: absolute;
 }
 
 #projects {
-    position:absolute;
     font-family: 'Courier New', Courier;
     font-size: 1.4vw;
     font-weight: bold;
@@ -87,4 +113,6 @@ hr {
     color: black;
     left: 50%;
     top: 80%;
+    position: absolute;
 }
+

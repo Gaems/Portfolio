@@ -1,14 +1,5 @@
-
-
 // The following is the initial animations on startup of the page.
 
-anime({
-  targets: "h1",
-  duration: 10000,
-  direction: "normal",      //fading in the heading (name) on the page
-  easing: "cubicBezier(0.240, 0.900, 0.540, 0.955)",
-  opacity: "1"
-});
 
 
 let underlineTimeline = anime.timeline({ // setting up a timeline for the underline/score under name
@@ -28,15 +19,6 @@ underlineTimeline
   easing: "linear",
   width: "70%"
 })
-.add({
-  targets: "#profilePic",
-  opacity: 1
-}, "-=50")
-.add({
-  targets: ".link",
-  opacity: 1
-}, "-=600")
-
 //"wiggle"
 
 anime({
@@ -77,6 +59,7 @@ anime({
 function swell () { // making it bigger
   anime.remove(this); // cannot stack animations if we want it to stay scaled after completion
   anime.set(this, {rotate: 0});
+  anime.set(this, {opacity:1});
   anime({
     targets: this,
     scale: {
@@ -103,7 +86,7 @@ function shrink(){ // making it smaller
 
 
 
-// The following is the logic for interaction with the initial page
+// BUTTON INTERACTIONS
 
 
 let elements = document.getElementsByClassName("link"); 

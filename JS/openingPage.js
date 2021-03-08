@@ -9,7 +9,6 @@ let underlineTimeline = anime.timeline({ // setting up a timeline for the underl
 underlineTimeline
 .add({            //making the hr opaque
   targets: "hr",
-  delay: 1400,
   duration: 10,
   opacity: "1"
 })
@@ -19,6 +18,8 @@ underlineTimeline
   easing: "linear",
   width: "70%"
 })
+
+
 //"wiggle"
 
 anime({
@@ -27,7 +28,6 @@ anime({
     {rotate:10},
     {rotate:-10},
     {rotate:0},
-
   ],
   delay:1500, 
   easing: "easeInOutQuad",
@@ -59,7 +59,6 @@ anime({
 function swell () { // making it bigger
   anime.remove(this); // cannot stack animations if we want it to stay scaled after completion
   anime.set(this, {rotate: 0});
-  anime.set(this, {opacity:1});
   anime({
     targets: this,
     scale: {

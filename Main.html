@@ -4,48 +4,152 @@
     <head>
         <title>EB - Hub</title>
         <link href = "css/openingPage.css" type = "text/css" rel = "stylesheet" /> 
-        <link href="css/secondPage.css" type="text/css" rel="stylesheet"/>
     </head>
 
     <body>
         <div id="container">
 
-            <div id = "pageOne" class="pageOne">
-                <div id = "titleBlock"> <!-- Holds the Title and underline/score -->
+            <div  class="pageOne">
+                    <!-- THIS IS THE FIRST SCENE -->
+
+                <div class="sceneOne" id = "titleBlock"> <!-- Holds the Title and underline/score -->
 
                     <h1 class="element">Elliot J Brookes</h1>
                     <hr class = "element">
                     
                 </div>
-                <a href="https://github.com/Gaems" id="github"> <!-- GitHub link -->
-                    <img src="pics/socialLogos/GitHub-Mark-120px-plus.png" class=" socialLogo link element middleRow" id="gitHub">
-                </a>
-                <a href="#"> <!-- -->
-                    <img src = "pics/socialLogos/mailIcon.png" class="socialLogo link element middleRow" id="email" >
-                </a>
-                <a href = "https://www.instagram.com/_elliotbrookes/"> <!-- Link for instagram, contains icon img-->
-                    <img src = "pics/socialLogos/pngfind.com-instagram-png-transparent-background-6932626.png" class = "socialLogo link element bottomRow" id = "instagram">
-                </a>
-                <a href = "https://www.linkedin.com/in/elliot-brookes-007550207/" > <!-- link element to linkedIn profile, containes icon img-->
-                    <img src = "pics/socialLogos/LI-In-Bug.png" class = "socialLogo link element bottomRow" id = "linkedIn">
-                </a>
-                <img src = "pics/profileMain.jpg" id = "profilePic" class = "element"> <!-- -->
-                <a href="#" id = "aboutMeBtn" class = "link element">About Me</a> <!-- Link to about me section -->
-                <a href="#" id="projects" class="link element">Projects</a>
 
+                <div class="sceneOne" id="github">
+                    <a href="https://github.com/Gaems" class="link middleRow sceneOne" > <!-- GitHub link -->
+                        <img src="pics/socialLogos/GitHub-Mark-120px-plus.png" class=" socialLogo element " id="gitHub">
+                        <p><b>Github</b></p>
+                    </a>
+                </div>
+
+                <div class="sceneOne" id="email">
+                    <a href="mailto:elliotbrookes1@gmail.com" class="link middleRow sceneOne" > <!-- -->
+                        <img src = "pics/socialLogos/mailIcon.png" class="socialLogo  element "  >
+                        <p><b>Email</b></p>
+                    </a>
+                </div>
+
+                <div class="sceneOne" id = "instagram">
+                    <a href = "https://www.instagram.com/_elliotbrookes/" class="link bottomRow sceneOne" > <!-- Link for instagram, contains icon img-->
+                        <img src = "pics/socialLogos/pngfind.com-instagram-png-transparent-background-6932626.png" class = "socialLogo  element ">
+                        <p><b>Instagram</b></p>
+                    </a>                
+                </div>
+
+                <div class="sceneOne" id = "linkedIn">
+                    <a href = "https://www.linkedin.com/in/elliot-brookes-007550207/" class="link bottomRow sceneOne" > <!-- link element to linkedIn profile, containes icon img-->
+                        <img src = "pics/socialLogos/LI-In-Bug.png" class = "socialLogo  element " >
+                        <p><b>LinkedIn</b></p>
+                    </a>
+                </div>
+
+
+                <img src = "pics/profileMain.jpg" id = "profilePic" class = "element sceneOne"> <!-- -->
+                <p class = "sceneOne element" id="pageControls"><b> Scroll down or hold DOWN arrow key</b></p>
+
+                <!-- THIS IS THE SECOND SCENE -->
+
+                <div class = "element sceneTwo" id="titleBlock">
+                    <h1><u>About Me</u></h1>
+                </div>
+                <div class="element sceneTwo" id="personalStatement">
+                    <p class="element ">
+                        <p>
+                            My name is Elliot Brookes, I'm a self-taught programmer based in Herefordshire and Dorset. I am someone who is motivated when faced with complex
+                             problems and thrive on being forced to learn in order to solve a problem.
+                        </p>
+                        <p>
+                            I have been programming as an interest
+                            since I recieved a first Raspberry Pi in 2012. I am someone who is
+                            looking to develop my skills and to create exciting solutions on a variety of platforms
+                            using a multitude of technologies. I'm eager to learn from those in the 
+                            industry to further develop my knowledge and skillset. Also, I am willing to explore all opportunities 
+                            that allow for future career development.
+                        </p>
+                        <p>
+                            Recently, I've been moving towards making more ambitious
+                            and permanent projects, this portfolio is the perfect example. This was
+                            developed using the Anime.js library and is a project that i intend to update
+                            and develop moving forward as I progress as a developer. Any other projects that
+                            I develop will have their repositories on my GitHub (link at the start).
+                        </p>
+                        <p></p>
+                        
+                    </p>
+
+                </div>
+                
+                <!-- THIS IS THE THIRD SCENE -->
+
+                <div class="sceneThree element" id="titleBlock">
+                    <h1><u>Programming</u></h1>
+                </div>
+                <div  class = "sceneThree" id="skillContainer">
+                    <h3 id="skillLevels">
+                        <u><span>Beginner</span></u>
+                        <u><span>Intermediate</span></u>
+                        <u><span>Advanced</span></u>
+                    </h2>
+                    <div id="skillBar">
+                        <b><span>Python</span></b>
+                        <div class="bar" id="Python"></div>
+                        <b><span>HTML</span></b>
+                        <div class="bar" id="HTML"></div>
+                        <b><span>CSS</span></b>
+                        <div class="bar" id="CSS"></div>
+                        <b><span>JavaScript</span></b>
+                        <div class="bar" id="JavaScript"></div>
+                        <b><span>C++</span></b>
+                        <div class="bar" id="Cpp"></div>
+                    </div>
+                </div>
+
+                <!-- THIS IS THE FOURTH SCENE -->
+
+                <div class="sceneFour element" id="titleBlock"><h1>Education<br> &<br> Work Experience</h1></div>
+                <div class="sceneFour element" id="workHistory">
+                    <ol>
+                        
+                        <li>
+                            <u>Joys Convenience Store</u>
+                            <p>Shop Worker // Weymouth, Dorset // 2018 – 2020<br>
+                                I was a general worker/ cashier within the shop, I would stock produce, interact with customers and use the tills. On certain shifts, I would be running the shop for the day on my own and would lock up the premises at closing times.
+                                </p>
+                        </li>
+                        <li>
+                            <u>The Fleet Inn</u>
+                            <p>Waiting staff/ food runner // Gloucestershire, England // 2017-2018<br>
+                                Cleaning duties were shared by staff members during shifts, main duties involved running food to tables and serving customers at the bar.
+                                </p>
+                        </li>
+                        <li>
+                            <u>SEEM Property Group & Accounting (Family run Company)</u>
+                            <p>General Property Maintenance // Cheltenham, Gloucestershire // 2014 – Current <br>
+                                •	General Maintenance (Ongoing part-time work) of properties including:<br>
+                                o	Painting<br>
+                                o	Removals<br>
+                                o	Filing and administrative tasks
+                                
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="sceneFour element" id="cvDownload">
+                    <span>Just incase:</span>
+                    <a href="Downloads/Elliot Brookes CV.docx" download = "ElliotBrookesCV">CV.doc</a>
+                    <a href="Downloads/ElliotBrookesCVPDF.pdf" download = "ElliotBrookesCV">CV.pdf</a>
+                </div>
             </div>
             <div class = "pageTwo">
             </div>
             <div class="pageThree">
-                <div id="titleBlock">
-                    <h1 class = "element link"></h1>
-                </div>
-                <p class="element" id="personalStatement">
-                    Example text
-                </p>
             </div>
             <div class="pageFour">
-                
+
             </div>
 
             <!-- Holds all links to scripting used in page-->
@@ -54,7 +158,6 @@
             <script src="JS/openingPage.js"></script>
             <script src="JS/scrolling.js"></script>
         </div>
-
 
     </body>
 
